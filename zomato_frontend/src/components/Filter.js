@@ -24,7 +24,7 @@ export default function Filter() {
 
     useEffect(() => {
         //fetch
-        fetch(`http://localhost:3038/restaurant/filter/${currentPageNo}`, requestOption)
+        fetch(`https://zomato-backend-ivgkth5hw-yash-titirmares-projects.vercel.app/restaurant/filter/${currentPageNo}`, requestOption)
             .then((response) => response.json())
             .then((data) => {
                 setRestaurants(data.data);
@@ -33,7 +33,7 @@ export default function Filter() {
     }, [filter, currentPageNo]);
 
     useEffect(() => {
-        fetch("http://localhost:3038/location", { method: 'GET' })
+        fetch("https://zomato-backend-ivgkth5hw-yash-titirmares-projects.vercel.app/location", { method: 'GET' })
             .then((response) => response.json())
             .then((data) => {
                 setRestaurantList(data.data)

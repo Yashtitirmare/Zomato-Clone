@@ -17,13 +17,13 @@ export default function RestaurantDetail() {
   const [totalPrice, setTotalPrice] = useState(0)
 
   useEffect(()=>{
-    fetch(`http://localhost:3038/restaurant/details/${rName}`,{method:'GET'})
+    fetch(`https://zomato-backend-ivgkth5hw-yash-titirmares-projects.vercel.app/restaurant/details/${rName}`,{method:'GET'})
     .then(response=>response.json())
     .then(data=>setRestaurant(data.data))
   },[])
   
   const fetchMenu = ()=>{
-    fetch(`http://localhost:3038/menu/${rName}`,{method:'GET'})
+    fetch(`https://zomato-backend-ivgkth5hw-yash-titirmares-projects.vercel.app/menu/${rName}`,{method:'GET'})
     .then(response=>response.json())
     .then(data=>setMenu(data.data))
   }
@@ -53,7 +53,7 @@ export default function RestaurantDetail() {
   const openRazorpay=async()=>{
    try{ //create order in razorpay by calling backend API
     let orderData;
-    orderData = await fetch('http://localhost:3038/pay',{
+    orderData = await fetch('https://zomato-backend-ivgkth5hw-yash-titirmares-projects.vercel.app/pay',{
       method:'POST',
       headers:{'Content-Type':'application/json'},
       body:JSON.stringify({amount:totalPrice})
@@ -74,7 +74,7 @@ export default function RestaurantDetail() {
        },
        handler:function(response){
         //call api that would would save transaction id
-        fetch('http://localhost:3038/pay/save',{
+        fetch('https://zomato-backend-ivgkth5hw-yash-titirmares-projects.vercel.app/pay/save',{
           method:'POST',
           headers:{'Content-Type':'application/json'},
           body:JSON.stringify({

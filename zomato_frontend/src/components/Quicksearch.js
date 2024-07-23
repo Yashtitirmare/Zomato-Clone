@@ -10,7 +10,7 @@ export default class extends Component {
   }
 
   componentDidMount() {
-    fetch("http://localhost:3038/mealtype", { method: "GET" })
+    fetch("https://zomato-backend-ivgkth5hw-yash-titirmares-projects.vercel.app/mealtype", { method: "GET" })
       .then((response) => response.json())
       .then((data) => this.setState({ mealtypes: data.data }));
   }
