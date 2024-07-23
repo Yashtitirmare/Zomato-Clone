@@ -1,0 +1,101 @@
+.logo
+{
+    font-family: 'Poppins', sans-serif;
+    margin-left: 46%;
+    margin-right: 40%;
+    background: white;
+    font-size: 65px;
+    color: red;
+    height: 95px;
+    width: 90px;
+    border-radius: 50%;
+    position: absolute;
+    top: 15%;
+    text-align: center;
+    font-weight: bold;
+}
+#homepage
+{
+    height: 501px;
+}    
+.heading
+{
+    font-size: 30px;
+    margin-left: 30%;
+    margin-right: 26%;
+    position: absolute;
+    top: 25%;
+    color: #fff;
+    font-weight: 500;
+    font-size: 40px;
+}
+.locationselecter
+{
+    display: flex;
+    text-align: center;
+    /* justify-content: center;
+    align-items: center; */
+    margin-left: 35%;
+    margin-right: 30%;
+    position: relative;
+    top: -168px;
+    
+}
+
+.location
+{
+    height: 40px;
+    width: 250px;
+    color: #000;
+    border: none;
+    margin-right: 25px;
+    font-size: 16px;
+    padding-left: 5px;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    outline: none;
+}
+.notebook{
+    width: 430px;
+    outline: none;
+    background-color: #fff;
+    border-radius: 00.25rem;
+    margin-left: 15px;
+    float: left;
+    position: relative;
+}
+.searchbar{
+    height: 35px;
+    width: 90%;
+    color: #000;
+    border: none;
+    font-size: 16px;
+    padding-left: 1rem;
+    outline: none;
+}
+
+.notebook ul {
+    margin: 0;
+    padding: 0;
+    margin-top: 5px;
+    list-style: none;
+    box-shadow:  0 3px 6px gray;
+    border: 1px solid #000;
+}
+
+.notebook ul li {
+    /* border: 1px solid grey; */
+    padding: 5px 10px;
+    background-color: #ffffff;
+    border-top: none;
+    text-align: left;
+    cursor: pointer;
+    color: grey;
+}
+
+.notebook ul li:hover {
+    background-color: #ccc;
+    font-weight: bold;
+}
+
+

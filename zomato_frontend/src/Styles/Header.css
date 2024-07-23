@@ -1,0 +1,179 @@
+
+.header {
+    width: 100%;
+    height: 50px;
+    background-color: #ce0505;
+    color: white;
+    overflow: hidden;
+}
+.s-logo {
+    text-align: center;
+    font-size: 25px;
+    color: #ce0505;
+    background: white;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    position: absolute;
+    top: 1%;
+    margin-left: 2%;
+    font-family: Poppins;
+    font-weight: bold;
+    
+}
+
+.login-block {
+    float: right;
+    padding-right: 20px;
+    padding-top: 1px;
+}
+.login {
+    margin: 10px;
+    font-weight: bold;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 6px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.create__account{
+    margin: 10px;
+    font-weight: bold;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 6px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.login:hover{
+    background-color: darkgreen;
+}
+.create__account:hover{
+    background-color: darkgreen;
+}
+.create__acc{
+    color: #000;
+
+}
+.create__acc:hover{
+ color: #0385ef;
+ font-weight: bold;
+}
+
+/*SearchBar*/
+.input__container{
+    width: 430px;
+    outline: none;
+    background-color: #fff;
+    border-radius: 00.25rem;
+    margin-left: 35%;
+    margin-top: 10px;
+    float: left;
+    position: relative;
+}
+.searchbar{
+    height: 35px;
+    width: 90%;
+    color: #000;
+    border: none;
+    font-size: 16px;
+    padding-left: 1rem;
+    outline: none;
+}
+.bi-search{
+    padding-left: 0.2rem ;
+}
+
+
+
+/*Login Page Css*/
+.login__page{
+    display: flex;
+}
+
+.btn__danger{
+    box-sizing: border-box;
+    padding: 8px;
+    font-size: 20px;
+    font-weight: 800;
+    background-color: #047008c4;
+    border: none;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    margin-left: 70%;
+}
+.btn__create_danger{
+    box-sizing: border-box;
+    padding: 8px;
+    font-size: 20px;
+    font-weight: 800;
+    background-color: #047008c4;
+    border: none;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    margin-left: 25%;
+}
+.fb__class{
+    /* margin-top: 85%; */
+    font-weight: 500;
+    font-size: 20px;
+    height: 45px;
+    width: 50px;
+    box-shadow: rgb(0 0 0 / 24%) 0px 2px 2px 0px, rgb(0 0 0 / 24%) 0px 0px 1px 0px;
+    background-color: #0385ef;
+    border: none;
+    border-radius: 0.2rem;
+    color: #fff;
+    padding: 7px;
+    cursor: pointer;
+}
+.google__class{
+    /* margin-top: 85%; */
+    font-weight: 500;
+    font-size: 20px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.head__login
+{
+    font-size: 30px;
+}
+/*style for form*/
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+.login__button{
+    background-color: #047008c4;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+.login__button:hover {
+    opacity: 0.8;
+  }
+.container{
+    color: black;
+    margin-top: 12%;
+}
+.remeber__checkbox{
+    margin-bottom: 10%;
+}

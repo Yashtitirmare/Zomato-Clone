@@ -1,0 +1,98 @@
+.about {
+    width: 181px;
+    height: 31px;
+    font-family: Poppins;
+    font-size: 22px;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    text-align: left;
+    color: #192f60;
+  }
+  .head {
+    height: 25px;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #192f60;
+    margin-left: 5px;
+  }
+  
+  .value {
+    height: 30px;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.88;
+    letter-spacing: normal;
+    text-align: left;
+    color: #192f60;
+    margin-left: 5px;
+  }
+  .REMOVE{
+    background: #c90808;
+    height: 34px;
+    width: 34px;
+    border-radius: 50px;
+    color: black;
+    margin-left: 1%;
+    font-weight: 800;
+    border: none;
+}
+.ADD{
+    background: #037e03;
+    height: 34px;
+    width: 34px;
+    border-radius: 50px;
+    color: black;
+    border: none;
+    font-weight: 800;
+}
+.ReactModal__Content{
+  position: absolute;
+  inset: 100px;
+  border: 1px solid rgb(204, 204, 204);
+  background: rgba(255, 255, 255, 0.983);
+  overflow: auto;
+  border-radius: 4px;
+  outline: none;
+  padding: 20px;
+  box-shadow: 0 0 7px;
+}
+.Place-menu{
+  color: #077707;
+  
+} 
+.close{
+  background: none;
+  border: none;
+  color: red;
+  font-weight: bold;
+  
+}
+
+.payNow{
+  display: flex;
+  justify-content: space-between;
+}
+.veg__non-veg{
+  text-decoration: none;
+  font-weight: bolder;
+  margin: 10px;
+  font-size: 20px;
+}
+.cuisines{
+  font-weight: normal;
+  font-size: 18px;
+}
