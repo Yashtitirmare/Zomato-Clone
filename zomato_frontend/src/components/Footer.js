@@ -35,7 +35,7 @@ function Footer() {
         <div className="grid2">
             <h6>ZOMAVERSE</h6>
             <nav>
-                <a  href="https://zomato-backend-sand.vercel.app/" target="_blank"><p>Zomato</p></a>
+                <a  href="http://localhost:3038/" target="_blank"><p>Zomato</p></a>
                 <a  href="#" target="_blank"><p>Feeding india</p></a>
                 <a  href="#" target="_blank"><p>Hyperpure</p></a>
                 <a  href="#" target="_blank"><p>Zomaland</p></a>

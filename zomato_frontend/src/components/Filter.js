@@ -24,7 +24,7 @@ export default function Filter() {
 
     useEffect(() => {
         //fetch
-        fetch(`https://zomato-backend-sand.vercel.app/restaurant/filter/${currentPageNo}`, requestOption)
+        fetch(`http://localhost:3038/restaurant/filter/${currentPageNo}`, requestOption)
             .then((response) => response.json())
             .then((data) => {
                 setRestaurants(data.data);
@@ -33,7 +33,7 @@ export default function Filter() {
     }, [filter, currentPageNo]);
 
     useEffect(() => {
-        fetch("https://zomato-backend-sand.vercel.app/location", { method: 'GET' })
+        fetch("http://localhost:3038/location", { method: 'GET' })
             .then((response) => response.json())
             .then((data) => {
                 setRestaurantList(data.data)

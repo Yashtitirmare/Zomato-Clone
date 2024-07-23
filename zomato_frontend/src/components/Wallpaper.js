@@ -16,14 +16,14 @@ export default class Wallpaper extends Component {
 
   componentDidMount(){
     //call api here
-    fetch('https://zomato-backend-sand.vercel.app/location',{method:'GET'})
+    fetch('http://localhost:3038/location',{method:'GET'})
     .then(response=>response.json())
     .then(data=>this.setState({locations:data.data}))
   }
 
   fetchRestaurants = (event)=>{
     console.log(event.target.value)
-    fetch(`https://zomato-backend-sand.vercel.app/restaurant/${event.target.value}`,{method:'GET'})
+    fetch(`http://localhost:3038/restaurant/${event.target.value}`,{method:'GET'})
     .then(response=>response.json())
     .then(data=>{this.setState({restaurants:data.data});console.log(data.data)})
   }

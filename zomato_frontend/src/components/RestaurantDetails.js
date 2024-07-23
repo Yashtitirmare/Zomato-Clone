@@ -17,13 +17,13 @@ export default function RestaurantDetail() {
   const [totalPrice, setTotalPrice] = useState(0)
 
   useEffect(()=>{
-    fetch(`https://zomato-backend-sand.vercel.app/restaurant/details/${rName}`,{method:'GET'})
+    fetch(`http://localhost:3038/restaurant/details/${rName}`,{method:'GET'})
     .then(response=>response.json())
     .then(data=>setRestaurant(data.data))
   },[])
   
   const fetchMenu = ()=>{
-    fetch(`https://zomato-backend-sand.vercel.app/menu/${rName}`,{method:'GET'})
+    fetch(`http://localhost:3038/menu/${rName}`,{method:'GET'})
     .then(response=>response.json())
     .then(data=>setMenu(data.data))
   }
@@ -53,7 +53,7 @@ export default function RestaurantDetail() {
   const openRazorpay=async()=>{
    try{ //create order in razorpay by calling backend API
     let orderData;
-    orderData = await fetch('https://zomato-backend-sand.vercel.app/pay',{
+    orderData = await fetch('http://localhost:3038/pay',{
       method:'POST',
       headers:{'Content-Type':'application/json'},
       body:JSON.stringify({amount:totalPrice})
@@ -74,7 +74,7 @@ export default function RestaurantDetail() {
        },
        handler:function(response){
         //call api that would would save transaction id
-        fetch('https://zomato-backend-sand.vercel.app/pay/save',{
+        fetch('http://localhost:3038/pay/save',{
           method:'POST',
           headers:{'Content-Type':'application/json'},
           body:JSON.stringify({
